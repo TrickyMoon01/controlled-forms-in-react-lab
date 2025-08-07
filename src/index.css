@@ -44,9 +44,10 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #8700c5;
   cursor: pointer;
   transition: border-color 0.25s;
+  margin-top: 10px;
 }
 button:hover {
   border-color: #646cff;
@@ -75,7 +76,6 @@ input {
 }
 
 .formDiv {
-  width: 60%;
   border: 1px solid white;
   display: flex;
   flex-direction: column;
