@@ -4,7 +4,7 @@ export default function Bookshelf() {
     { title: "Fourth Wing", author: "Rebecca Yarros" },
     { title: "The Lion, the Witch and the Wardrobe", author: "C.S. Lewis" },
   ]);
-  const [newBook, setNewBook] = useState({});
+  const [newBook, setNewBook] = useState({title:"", author: ""});
 
   function handleInputChange(event) {
     const { name, value } = event.target;
@@ -13,7 +13,7 @@ export default function Bookshelf() {
   function handleSubmit(event) {
     event.preventDefault();
     setBooks([...books, newBook]);
-    setNewBook({});
+    setNewBook({title:"", author: ""});
   }
   return (
     <div className="bookshelfDiv">
